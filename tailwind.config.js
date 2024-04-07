@@ -8,7 +8,11 @@ module.exports = {
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
-        "gray-dark": "#232742",
+        "gray-dark": "#36384d",
+        "nw-orange": "#FD5379",
+        "nw-orange-dark": "#FF693E",
+        gradient: "linear-gradient(90deg, rgba(253,83,121,1) 0%, rgba(255,105,62,1) 100%)",
+        "button-shadow": "#F5C6C6",
       },
     },
   },

@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
     <html lang='en' className='h-full'>
       <body className={`${inter.className} h-full`}>
         <Header />
-        <main className='md:p-24 h-full bg-white mb-4'>{children}</main>
+        <main className='md:p-24 h-full bg-gray-dark mb-4'>{children}</main>
       </body>
     </html>
   );
