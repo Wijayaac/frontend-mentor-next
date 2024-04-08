@@ -36,7 +36,10 @@ export default function Modal({ isOpen, setIsOpen, email }) {
                     </div>
                   </div>
                   <div className='mt-auto'>
-                    <button type='button' onClick={closeModal} className='index-2 w-full mt-auto inline-flex justify-center items-center font-bold text-sm p-4 bg-gray-dark text-white rounded-lg'>
+                    <button
+                      type='button'
+                      onClick={closeModal}
+                      className='index-2 w-full mt-auto inline-flex justify-center items-center font-bold text-sm p-4 bg-gray-dark text-white rounded-lg transition duration-300 hover:bg-gradient-to-r from-nw-orange to-nw-orange-dark'>
                       Dismiss message
                     </button>
                   </div>

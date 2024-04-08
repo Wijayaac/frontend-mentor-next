@@ -1,12 +1,20 @@
 {
   "name": "frontend-mentor-next",
-  "version": "0.1.0",
+  "version": "0.1.7",
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "development": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prepare": "husky install",
+    "release": "standard-version"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   },
   "dependencies": {
     "@headlessui/react": "^1.7.18",
@@ -15,10 +23,14 @@
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@commitlint/cli": "^18.4.3",
+    "@commitlint/config-conventional": "^18.4.3",
     "autoprefixer": "^10.0.1",
     "eslint": "^8",
     "eslint-config-next": "14.1.4",
+    "husky": "^9.0.11",
     "postcss": "^8",
+    "standard-version": "^9.5.0",
     "tailwindcss": "^3.3.0"
   }
 }
