@@ -27,7 +27,7 @@ export default function Modal({ isOpen, setIsOpen, email }) {
                       Thank for subscribing!
                     </Dialog.Title>
 
-                    <div className='mt-8'>
+                    <div className='mt-8 text-nw-gray'>
                       {/* TODO: using dynamic data here */}
                       <p>
                         A confirmation email has been sent to
@@ -39,7 +39,7 @@ export default function Modal({ isOpen, setIsOpen, email }) {
                     <button
                       type='button'
                       onClick={closeModal}
-                      className='index-2 w-full mt-auto inline-flex justify-center items-center font-bold text-sm p-4 bg-gray-dark text-white rounded-lg transition duration-300 hover:bg-gradient-to-r from-nw-orange to-nw-orange-dark'>
+                      className='index-2 w-full mt-auto inline-flex justify-center items-center font-bold text-sm p-4 bg-nw-gray text-white rounded-lg transition duration-300 hover:bg-gradient-to-r from-nw-orange to-nw-orange-dark'>
                       Dismiss message
                     </button>
                   </div>
